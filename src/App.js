@@ -5,26 +5,26 @@ import { Zoom } from "./Zoom";
 // import "./huseby.css";
 
 const useStyles = makeStyles(() => ({
-  // content: {
-  //   display: "flex",
-  //   flexDirection: "column",
-  //   height: "100%",
-  //   width: "100%",
-  // },
-  // header: {
-  //   display: "flex",
-  //   flexDirection: "column",
-  //   height: "100px",
-  //   width: "100%",
-  //   backgroundColor: "#ff0000",
-  // },
-  // main: {
-  //   display: "flex",
-  //   flexDirection: "row",
-  //   height: "100%",
-  //   width: "100%",
-  //   backgroundColor: "#ffff00",
-  // },
+  content: {
+    display: "flex",
+    flexDirection: "column",
+    height: "100%",
+    width: "100%",
+  },
+  header: {
+    display: "flex",
+    flexDirection: "column",
+    height: "100px",
+    width: "100%",
+    backgroundColor: "#ff0000",
+  },
+  main: {
+    display: "flex",
+    flexDirection: "row",
+    height: "100%",
+    width: "100%",
+    backgroundColor: "#ffff00",
+  },
   // huseby_content: {
   //   display: "flex",
   //   flexDirection: "column",
