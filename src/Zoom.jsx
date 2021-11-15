@@ -90,8 +90,8 @@ const Zoom = () => {
 
   const generateSignature = () => {
     const timestamp = new Date().getTime() - 30000;
-    const apiKey = API_KEY;
-    const apiSecret = API_SECRET;
+    const apiKey = process.env.REACT_APP_ZOOM_API_KEY;
+    const apiSecret = process.env.REACT_APP_ZOOM_API_SECRET;
     const msg = Base64.encode(apiKey + meetingNumber + timestamp + role);
     const hash = hmacSHA256(msg, apiSecret);
     const signature = Base64.encodeURI(
