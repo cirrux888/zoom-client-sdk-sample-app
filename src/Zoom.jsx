@@ -21,8 +21,8 @@ import { Base64 } from "js-base64";
 const Zoom = () => {
   const zoomEmbeddedApp = React.useRef();
 
-  const API_KEY = "9xpiSa7yTrO3-d7DQFo5CA";
-  const API_SECRET = "lSJVzpCpJ1Pek2GauKGpoStTgvCBBy0Jh67h";
+  // const API_KEY = "9xpiSa7yTrO3-d7DQFo5CA";
+  // const API_SECRET = "lSJVzpCpJ1Pek2GauKGpoStTgvCBBy0Jh67h";
   const username = "quinn.wong@cirruxsolutions.com";
   const email = "quinn.wong@cirruxsolutions.com";
   const meetingNumber = 93624992170;
@@ -90,8 +90,8 @@ const Zoom = () => {
 
   const generateSignature = () => {
     const timestamp = new Date().getTime() - 30000;
-    const apiKey = API_KEY;
-    const apiSecret = API_SECRET;
+    const apiKey = process.env.REACT_APP_ZOOM_API_KEY;
+    const apiSecret = process.env.REACT_APP_ZOOM_API_SECRET;
     const msg = Base64.encode(apiKey + meetingNumber + timestamp + role);
     const hash = hmacSHA256(msg, apiSecret);
     const signature = Base64.encodeURI(
