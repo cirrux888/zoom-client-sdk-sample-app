@@ -23,6 +23,7 @@ const Zoom = () => {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   // Replace with your username, email, meetingNumber and password
 =======
   // const API_KEY = "9xpiSa7yTrO3-d7DQFo5CA";
@@ -31,6 +32,9 @@ const Zoom = () => {
 =======
   // Replace with your username, email, meetingNumber and password
 >>>>>>> 8281430 (Removed API_KEY and API_SECRET)
+=======
+  // Replace with your username, email, meetingNumber and password
+>>>>>>> 977b8b35281b5d0c4f501c492b90fc0eb10963ea
   const username = "quinn.wong@cirruxsolutions.com";
   const email = "quinn.wong@cirruxsolutions.com";
   const meetingNumber = 93624992170;
