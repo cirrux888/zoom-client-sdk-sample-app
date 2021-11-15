@@ -21,8 +21,7 @@ import { Base64 } from "js-base64";
 const Zoom = () => {
   const zoomEmbeddedApp = React.useRef();
 
-  const API_KEY = "";
-  const API_SECRET = "";
+  // Replace with your username, email, meetingNumber and password
   const username = "quinn.wong@cirruxsolutions.com";
   const email = "quinn.wong@cirruxsolutions.com";
   const meetingNumber = 93624992170;
